@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42757CF62148EC8B008B6464 /* AdobeLicenseWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 42757CF42148EC8B008B6464 /* AdobeLicenseWindow.m */; };
+		42757CF72148EC8B008B6464 /* AdobeLicenseWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42757CF52148EC8B008B6464 /* AdobeLicenseWindow.xib */; };
+		42757D18214BF214008B6464 /* DNGConverterDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42757D16214BF214008B6464 /* DNGConverterDownloadViewController.xib */; };
+		42757D19214BF214008B6464 /* DNGConverterDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42757D17214BF214008B6464 /* DNGConverterDownloadViewController.swift */; };
+		428E1E592147F9CA004BD892 /* MyInstallerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E1E582147F9CA004BD892 /* MyInstallerPane.m */; };
+		428E1E5C2147F9CA004BD892 /* MyInstallerPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428E1E5A2147F9CA004BD892 /* MyInstallerPane.xib */; };
+		428E1E5F2147F9CA004BD892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 428E1E5D2147F9CA004BD892 /* Localizable.strings */; };
+		428E1E612147F9CA004BD892 /* InstallerSections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 428E1E602147F9CA004BD892 /* InstallerSections.plist */; };
+		428E1E652147F9CA004BD892 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 428E1E632147F9CA004BD892 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42757CF32148EC8B008B6464 /* AdobeLicenseWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdobeLicenseWindow.h; sourceTree = "<group>"; };
+		42757CF42148EC8B008B6464 /* AdobeLicenseWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdobeLicenseWindow.m; sourceTree = "<group>"; };
+		42757CF52148EC8B008B6464 /* AdobeLicenseWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdobeLicenseWindow.xib; sourceTree = "<group>"; };
+		42757D16214BF214008B6464 /* DNGConverterDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNGConverterDownloadViewController.xib; sourceTree = "<group>"; };
+		42757D17214BF214008B6464 /* DNGConverterDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNGConverterDownloadViewController.swift; sourceTree = "<group>"; };
+		428E1E542147F9CA004BD892 /* AdobeDNGConverterInstaller.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdobeDNGConverterInstaller.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		428E1E572147F9CA004BD892 /* MyInstallerPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstallerPane.h; sourceTree = "<group>"; };
+		428E1E582147F9CA004BD892 /* MyInstallerPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstallerPane.m; sourceTree = "<group>"; };
+		428E1E5B2147F9CA004BD892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyInstallerPane.xib; sourceTree = "<group>"; };
+		428E1E5E2147F9CA004BD892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		428E1E602147F9CA004BD892 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InstallerSections.plist; sourceTree = "<group>"; };
+		428E1E622147F9CA004BD892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428E1E642147F9CA004BD892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428E1E512147F9CA004BD892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42757D1A214BF21D008B6464 /* DNGConverterInstallHelper */ = {
+			isa = PBXGroup;
+			children = (
+				42757D16214BF214008B6464 /* DNGConverterDownloadViewController.xib */,
+				42757D17214BF214008B6464 /* DNGConverterDownloadViewController.swift */,
+			);
+			path = DNGConverterInstallHelper;
+			sourceTree = "<group>";
+		};
+		428E1E4B2147F9CA004BD892 = {
+			isa = PBXGroup;
+			children = (
+				428E1E562147F9CA004BD892 /* AdobeDNGConverterInstaller */,
+				428E1E552147F9CA004BD892 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		428E1E552147F9CA004BD892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428E1E542147F9CA004BD892 /* AdobeDNGConverterInstaller.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428E1E562147F9CA004BD892 /* AdobeDNGConverterInstaller */ = {
+			isa = PBXGroup;
+			children = (
+				42757D1A214BF21D008B6464 /* DNGConverterInstallHelper */,
+				42757CF32148EC8B008B6464 /* AdobeLicenseWindow.h */,
+				42757CF42148EC8B008B6464 /* AdobeLicenseWindow.m */,
+				42757CF52148EC8B008B6464 /* AdobeLicenseWindow.xib */,
+				428E1E622147F9CA004BD892 /* Info.plist */,
+				428E1E632147F9CA004BD892 /* InfoPlist.strings */,
+				428E1E602147F9CA004BD892 /* InstallerSections.plist */,
+				428E1E5D2147F9CA004BD892 /* Localizable.strings */,
+				428E1E572147F9CA004BD892 /* MyInstallerPane.h */,
+				428E1E582147F9CA004BD892 /* MyInstallerPane.m */,
+				428E1E5A2147F9CA004BD892 /* MyInstallerPane.xib */,
+			);
+			path = AdobeDNGConverterInstaller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428E1E532147F9CA004BD892 /* AdobeDNGConverterInstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428E1E682147F9CA004BD892 /* Build configuration list for PBXNativeTarget "AdobeDNGConverterInstaller" */;
+			buildPhases = (
+				428E1E502147F9CA004BD892 /* Sources */,
+				428E1E512147F9CA004BD892 /* Frameworks */,
+				428E1E522147F9CA004BD892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdobeDNGConverterInstaller;
+			productName = AdobeDNGConverterInstaller;
+			productReference = 428E1E542147F9CA004BD892 /* AdobeDNGConverterInstaller.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428E1E4C2147F9CA004BD892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Dotphoton;
+				TargetAttributes = {
+					428E1E532147F9CA004BD892 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 428E1E4F2147F9CA004BD892 /* Build configuration list for PBXProject "AdobeDNGConverterInstaller" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 428E1E4B2147F9CA004BD892;
+			productRefGroup = 428E1E552147F9CA004BD892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428E1E532147F9CA004BD892 /* AdobeDNGConverterInstaller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		428E1E522147F9CA004BD892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E1E5C2147F9CA004BD892 /* MyInstallerPane.xib in Resources */,
+				428E1E652147F9CA004BD892 /* InfoPlist.strings in Resources */,
+				428E1E5F2147F9CA004BD892 /* Localizable.strings in Resources */,
+				42757CF72148EC8B008B6464 /* AdobeLicenseWindow.xib in Resources */,
+				428E1E612147F9CA004BD892 /* InstallerSections.plist in Resources */,
+				42757D18214BF214008B6464 /* DNGConverterDownloadViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428E1E502147F9CA004BD892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E1E592147F9CA004BD892 /* MyInstallerPane.m in Sources */,
+				42757CF62148EC8B008B6464 /* AdobeLicenseWindow.m in Sources */,
+				42757D19214BF214008B6464 /* DNGConverterDownloadViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		428E1E5A2147F9CA004BD892 /* MyInstallerPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E1E5B2147F9CA004BD892 /* Base */,
+			);
+			name = MyInstallerPane.xib;
+			sourceTree = "<group>";
+		};
+		428E1E5D2147F9CA004BD892 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E1E5E2147F9CA004BD892 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		428E1E632147F9CA004BD892 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E1E642147F9CA004BD892 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		428E1E662147F9CA004BD892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		428E1E672147F9CA004BD892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		428E1E692147F9CA004BD892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WTKC8HSEGY;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				INFOPLIST_FILE = AdobeDNGConverterInstaller/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotphoton.AdobeDNGConverterInstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		428E1E6A2147F9CA004BD892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WTKC8HSEGY;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				INFOPLIST_FILE = AdobeDNGConverterInstaller/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotphoton.AdobeDNGConverterInstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428E1E4F2147F9CA004BD892 /* Build configuration list for PBXProject "AdobeDNGConverterInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E1E662147F9CA004BD892 /* Debug */,
+				428E1E672147F9CA004BD892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428E1E682147F9CA004BD892 /* Build configuration list for PBXNativeTarget "AdobeDNGConverterInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E1E692147F9CA004BD892 /* Debug */,
+				428E1E6A2147F9CA004BD892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428E1E4C2147F9CA004BD892 /* Project object */;
+}

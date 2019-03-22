@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DialogController" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <connections>
+                <outlet property="checkBoxBox" destination="imd-mR-r4W" id="IdN-FX-Yky"/>
+                <outlet property="checkBoxHeight" destination="IU6-Y0-j0F" id="2FA-v9-qA0"/>
+                <outlet property="checkBoxItem" destination="XGw-xD-ZLx" id="end-oA-wzX"/>
+                <outlet property="messageBox" destination="h8S-ls-MPS" id="FYP-1x-nXg"/>
+                <outlet property="messageLabel" destination="4fQ-Hs-58e" id="n6v-GP-qF4"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="320" height="370"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="m94-lc-Uo5">
+                        <rect key="frame" x="0.0" y="330" width="320" height="40"/>
+                        <view key="contentView" id="G2n-Ah-BcF">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <box boxType="custom" borderType="line" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hpQ-3L-GI7" userLabel="HorizontalLine">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                    <view key="contentView" id="9Vt-Ib-Q3J">
+                                        <rect key="frame" x="1" y="0.5" width="318" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="FQz-hi-62Y"/>
+                                        <constraint firstAttribute="height" constant="1" id="qeC-XF-EFX"/>
+                                    </constraints>
+                                    <color key="borderColor" name="Color Border"/>
+                                </box>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="hpQ-3L-GI7" secondAttribute="bottom" id="EpO-ic-5ZZ"/>
+                                <constraint firstItem="hpQ-3L-GI7" firstAttribute="leading" secondItem="G2n-Ah-BcF" secondAttribute="leading" id="bBs-ud-sh2"/>
+                                <constraint firstAttribute="trailing" secondItem="hpQ-3L-GI7" secondAttribute="trailing" id="yBc-Pj-Up9"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="y80-vj-HiP"/>
+                        </constraints>
+                        <color key="fillColor" name="Color Window Background"/>
+                    </box>
+                    <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="h8S-ls-MPS" userLabel="MessageBox">
+                        <rect key="frame" x="0.0" y="233" width="320" height="97"/>
+                        <view key="contentView" id="XUs-ZH-wUt">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="4fQ-Hs-58e" userLabel="MessageLabel">
+                                    <rect key="frame" x="18" y="20" width="284" height="57"/>
+                                    <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="center" title="300 items with the same names already exist in this location. What shall we do?" id="Ej0-Q8-Rvd">
+                                        <font key="font" metaFont="system" size="16"/>
+                                        <color key="textColor" name="Color Text Dark"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="4fQ-Hs-58e" firstAttribute="centerY" secondItem="XUs-ZH-wUt" secondAttribute="centerY" id="Ct9-ct-2Rn"/>
+                                <constraint firstAttribute="bottom" secondItem="4fQ-Hs-58e" secondAttribute="bottom" constant="20" id="VSy-gc-4bK"/>
+                                <constraint firstAttribute="trailing" secondItem="4fQ-Hs-58e" secondAttribute="trailing" constant="20" id="gH8-Mu-oK2"/>
+                                <constraint firstItem="4fQ-Hs-58e" firstAttribute="top" secondItem="XUs-ZH-wUt" secondAttribute="top" constant="20" id="ipZ-Cz-Rpm"/>
+                                <constraint firstItem="4fQ-Hs-58e" firstAttribute="leading" secondItem="XUs-ZH-wUt" secondAttribute="leading" constant="20" id="nEC-mt-Sft"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="320" id="OvR-2H-Hwj"/>
+                        </constraints>
+                        <color key="fillColor" name="Color Window Background"/>
+                    </box>
+                    <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="imd-mR-r4W">
+                        <rect key="frame" x="0.0" y="193" width="320" height="40"/>
+                        <view key="contentView" id="mfb-yG-vJG">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XGw-xD-ZLx">
+                                    <rect key="frame" x="75" y="11" width="170" height="19"/>
+                                    <buttonCell key="cell" type="check" title="Apply to all 300 files" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="khN-KM-S8c">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system" size="16"/>
+                                    </buttonCell>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="XGw-xD-ZLx" firstAttribute="centerX" secondItem="mfb-yG-vJG" secondAttribute="centerX" id="8Fr-tS-Miv"/>
+                                <constraint firstItem="XGw-xD-ZLx" firstAttribute="centerY" secondItem="mfb-yG-vJG" secondAttribute="centerY" id="nx6-DY-Jze"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="IU6-Y0-j0F"/>
+                        </constraints>
+                        <color key="fillColor" name="Color Window Background"/>
+                    </box>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h8S-ls-MPS" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="3eP-DZ-hKQ"/>
+                    <constraint firstAttribute="trailing" secondItem="imd-mR-r4W" secondAttribute="trailing" id="Dgm-4O-Rjn"/>
+                    <constraint firstItem="imd-mR-r4W" firstAttribute="top" secondItem="h8S-ls-MPS" secondAttribute="bottom" id="Qq3-BC-tOj"/>
+                    <constraint firstItem="h8S-ls-MPS" firstAttribute="top" secondItem="m94-lc-Uo5" secondAttribute="bottom" id="VG9-hd-wBN"/>
+                    <constraint firstItem="m94-lc-Uo5" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="Yk4-S9-Z3V"/>
+                    <constraint firstAttribute="trailing" secondItem="m94-lc-Uo5" secondAttribute="trailing" id="eyF-sP-kbX"/>
+                    <constraint firstItem="m94-lc-Uo5" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="qGI-94-fcv"/>
+                    <constraint firstAttribute="trailing" secondItem="h8S-ls-MPS" secondAttribute="trailing" id="tqi-J4-cY1"/>
+                    <constraint firstItem="imd-mR-r4W" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="trf-KE-sGh"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="74"/>
+        </window>
+    </objects>
+    <resources>
+        <namedColor name="Color Border">
+            <color red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color Text Dark">
+            <color red="0.24300000071525574" green="0.24300000071525574" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color Window Background">
+            <color red="0.96899998188018799" green="0.96899998188018799" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

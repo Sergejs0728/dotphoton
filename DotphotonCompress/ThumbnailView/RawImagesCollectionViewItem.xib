@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RawImagesCollectionViewItem" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <collectionViewItem id="PYc-If-DSd" customClass="RawImagesCollectionViewItem" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <connections>
+                <outlet property="frameHeight" destination="iOP-4t-ytX" id="UbG-Fk-TaL"/>
+                <outlet property="frameWidth" destination="5gr-fg-Ib4" id="9hY-hd-UMC"/>
+                <outlet property="highlightFrame" destination="1JJ-uI-Akz" id="8Yr-Bt-jXR"/>
+                <outlet property="imageView" destination="OjZ-Q0-Haq" id="70o-Aw-mSN"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="C8A-Iu-eY7"/>
+            </connections>
+        </collectionViewItem>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box hidden="YES" boxType="custom" borderWidth="4" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="1JJ-uI-Akz">
+                    <rect key="frame" x="230" y="126" width="20" height="20"/>
+                    <view key="contentView" id="dG7-dr-zlE">
+                        <rect key="frame" x="4" y="4" width="12" height="12"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="5gr-fg-Ib4"/>
+                        <constraint firstAttribute="height" constant="20" id="iOP-4t-ytX"/>
+                    </constraints>
+                    <color key="borderColor" name="Color Item Selected"/>
+                </box>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OjZ-Q0-Haq">
+                    <rect key="frame" x="4" y="4" width="472" height="264"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Placeholder" id="ej2-cU-lIf"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1JJ-uI-Akz" firstAttribute="centerX" secondItem="OjZ-Q0-Haq" secondAttribute="centerX" id="0sM-yk-MlB"/>
+                <constraint firstItem="OjZ-Q0-Haq" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="4" id="3up-7p-01b"/>
+                <constraint firstAttribute="bottom" secondItem="OjZ-Q0-Haq" secondAttribute="bottom" constant="4" id="Zub-n0-0UQ"/>
+                <constraint firstAttribute="trailing" secondItem="OjZ-Q0-Haq" secondAttribute="trailing" constant="4" id="h2i-kL-JId"/>
+                <constraint firstItem="1JJ-uI-Akz" firstAttribute="centerY" secondItem="OjZ-Q0-Haq" secondAttribute="centerY" id="qfM-pz-jCH"/>
+                <constraint firstItem="OjZ-Q0-Haq" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="4" id="rD9-vw-tYi"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Placeholder" width="120" height="120"/>
+        <namedColor name="Color Item Selected">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

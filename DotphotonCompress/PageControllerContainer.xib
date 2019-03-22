@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PageControllerContainer" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControlButton" destination="g0P-6h-LRQ" id="4Am-sx-Ug2"/>
+                <outlet property="pageController" destination="pLd-JE-4Vj" id="crj-of-fOo"/>
+                <outlet property="statusLabel" destination="9XQ-Ae-67L" id="hRB-f8-Ccu"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="695" height="545"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9fv-rG-9Wn" userLabel="StatusPanel">
+                    <rect key="frame" x="0.0" y="505" width="695" height="40"/>
+                    <view key="contentView" id="ozn-89-Kly">
+                        <rect key="frame" x="0.0" y="0.0" width="695" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hzQ-ff-1zy" userLabel="HLine">
+                                <rect key="frame" x="0.0" y="0.0" width="695" height="1"/>
+                                <view key="contentView" id="Gdz-kH-2lb">
+                                    <rect key="frame" x="0.0" y="0.0" width="695" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Lnq-qh-Nhy"/>
+                                </constraints>
+                                <color key="fillColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9XQ-Ae-67L">
+                                <rect key="frame" x="78" y="12" width="469" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Dotphoton Compress v1.0" id="VzP-N5-u8i">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" red="0.61960784313725492" green="0.62352941176470589" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0P-6h-LRQ" customClass="LabelButton" customModule="Dotphoton_Compress" customModuleProvider="target">
+                                <rect key="frame" x="555" y="8" width="120" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="26d-Yh-smu"/>
+                                    <constraint firstAttribute="height" constant="24" id="T9y-RG-zSY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Camera packs  ❯"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="labelClicked:" target="-2" id="fKS-TK-b9T"/>
+                                </connections>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hzQ-ff-1zy" secondAttribute="bottom" id="0kE-pJ-SPj"/>
+                            <constraint firstAttribute="trailing" secondItem="g0P-6h-LRQ" secondAttribute="trailing" constant="20" id="8mD-zC-tzh"/>
+                            <constraint firstItem="9XQ-Ae-67L" firstAttribute="centerY" secondItem="ozn-89-Kly" secondAttribute="centerY" id="L50-bM-0Hk"/>
+                            <constraint firstAttribute="trailing" secondItem="hzQ-ff-1zy" secondAttribute="trailing" id="Qf5-Tm-SD9"/>
+                            <constraint firstItem="g0P-6h-LRQ" firstAttribute="leading" secondItem="9XQ-Ae-67L" secondAttribute="trailing" constant="10" id="RMo-Mg-mng"/>
+                            <constraint firstItem="9XQ-Ae-67L" firstAttribute="leading" secondItem="ozn-89-Kly" secondAttribute="leading" constant="80" id="fie-5v-Tel"/>
+                            <constraint firstItem="hzQ-ff-1zy" firstAttribute="leading" secondItem="ozn-89-Kly" secondAttribute="leading" id="qDC-gD-xFB"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstItem="g0P-6h-LRQ" firstAttribute="centerY" secondItem="9fv-rG-9Wn" secondAttribute="centerY" id="SLp-Yf-Zsa"/>
+                        <constraint firstAttribute="height" constant="40" id="eF7-B7-OZw"/>
+                    </constraints>
+                    <color key="borderColor" red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="fillColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                </box>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="fOw-0o-ILL">
+                    <rect key="frame" x="0.0" y="40" width="695" height="465"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="9rz-iE-TsE"/>
+                    </constraints>
+                </customView>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="QzY-cp-YAx" userLabel="StatusPanel">
+                    <rect key="frame" x="0.0" y="0.0" width="695" height="40"/>
+                    <view key="contentView" id="aKq-Td-HDV">
+                        <rect key="frame" x="0.0" y="0.0" width="695" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="DFT-B1-96f" userLabel="HLine">
+                                <rect key="frame" x="0.0" y="39" width="695" height="1"/>
+                                <view key="contentView" id="7N4-Ij-SOC">
+                                    <rect key="frame" x="0.0" y="0.0" width="695" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="h4e-SQ-xz0"/>
+                                </constraints>
+                                <color key="fillColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="9Er-q9-qHx" customClass="LabelButton" customModule="Dotphoton_Compress" customModuleProvider="target">
+                                <rect key="frame" x="15" y="8" width="120" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="WKH-00-CrP"/>
+                                    <constraint firstAttribute="width" constant="120" id="mnE-oQ-G1L"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Get a free month"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.61960784313725492" green="0.62352941176470589" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="labelClicked:" target="-2" id="3uU-LT-KU5"/>
+                                </connections>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="VnE-PN-xhh" customClass="LabelButton" customModule="Dotphoton_Compress" customModuleProvider="target">
+                                <rect key="frame" x="155" y="8" width="100" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="ARr-2u-Rdx"/>
+                                    <constraint firstAttribute="width" constant="100" id="hSq-Di-I4L"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Check license"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.61960784313725492" green="0.62352941176470589" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="labelClicked:" target="-2" id="nRW-tR-aZr"/>
+                                </connections>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="QjK-Fy-8nu" customClass="LabelButton" customModule="Dotphoton_Compress" customModuleProvider="target">
+                                <rect key="frame" x="275" y="8" width="70" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="B9c-zp-ao3"/>
+                                    <constraint firstAttribute="width" constant="70" id="sqK-Zg-WPR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Settings"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.61960784313725492" green="0.62352941176470589" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="labelClicked:" target="-2" id="cQS-YL-9Ny"/>
+                                </connections>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DFT-B1-96f" secondAttribute="trailing" id="30A-uq-8ai"/>
+                            <constraint firstItem="QjK-Fy-8nu" firstAttribute="centerY" secondItem="aKq-Td-HDV" secondAttribute="centerY" id="8qc-78-lvt"/>
+                            <constraint firstItem="QjK-Fy-8nu" firstAttribute="leading" secondItem="VnE-PN-xhh" secondAttribute="trailing" constant="20" id="MpR-zK-uHd"/>
+                            <constraint firstItem="DFT-B1-96f" firstAttribute="top" secondItem="aKq-Td-HDV" secondAttribute="top" id="Pvf-uQ-Ukx"/>
+                            <constraint firstItem="VnE-PN-xhh" firstAttribute="centerY" secondItem="aKq-Td-HDV" secondAttribute="centerY" id="a1c-a8-zmc"/>
+                            <constraint firstItem="VnE-PN-xhh" firstAttribute="leading" secondItem="9Er-q9-qHx" secondAttribute="trailing" constant="20" id="mHg-pg-94i"/>
+                            <constraint firstItem="DFT-B1-96f" firstAttribute="leading" secondItem="aKq-Td-HDV" secondAttribute="leading" id="s73-wn-E8U"/>
+                            <constraint firstItem="9Er-q9-qHx" firstAttribute="centerY" secondItem="aKq-Td-HDV" secondAttribute="centerY" id="tvU-hE-asn"/>
+                            <constraint firstItem="9Er-q9-qHx" firstAttribute="leading" secondItem="aKq-Td-HDV" secondAttribute="leading" constant="15" id="u8s-li-JsD"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="c3o-gD-MU3"/>
+                    </constraints>
+                    <color key="borderColor" red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="fillColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fOw-0o-ILL" firstAttribute="top" secondItem="9fv-rG-9Wn" secondAttribute="bottom" id="199-j1-nXA"/>
+                <constraint firstItem="9fv-rG-9Wn" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="6dv-05-Iz1"/>
+                <constraint firstAttribute="trailing" secondItem="fOw-0o-ILL" secondAttribute="trailing" id="F75-fP-fFk"/>
+                <constraint firstAttribute="trailing" secondItem="QzY-cp-YAx" secondAttribute="trailing" id="Fqu-jf-DAe"/>
+                <constraint firstItem="9fv-rG-9Wn" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="aam-M5-vGF"/>
+                <constraint firstItem="fOw-0o-ILL" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="dBP-UF-46L"/>
+                <constraint firstItem="QzY-cp-YAx" firstAttribute="top" secondItem="fOw-0o-ILL" secondAttribute="bottom" id="hJS-OV-9wn"/>
+                <constraint firstAttribute="trailing" secondItem="9fv-rG-9Wn" secondAttribute="trailing" id="l66-td-NPD"/>
+                <constraint firstAttribute="bottom" secondItem="QzY-cp-YAx" secondAttribute="bottom" id="v7a-0d-sbG"/>
+                <constraint firstItem="QzY-cp-YAx" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="xgM-HL-9HR"/>
+            </constraints>
+            <point key="canvasLocation" x="145.5" y="75.5"/>
+        </customView>
+        <pagecontroller id="pLd-JE-4Vj" customClass="FixedPageController" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <connections>
+                <outlet property="delegate" destination="-2" id="1Dk-a2-OTF"/>
+                <outlet property="view" destination="fOw-0o-ILL" id="Vwr-e4-hd8"/>
+            </connections>
+        </pagecontroller>
+    </objects>
+</document>

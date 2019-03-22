@@ -1,0 +1,1013 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4203F8932073B82300DC5EB3 /* StartButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4203F8922073B82300DC5EB3 /* StartButton.xib */; };
+		4203F8992073CE2900DC5EB3 /* NSBezierPath+cgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4203F8982073CE2900DC5EB3 /* NSBezierPath+cgPath.swift */; };
+		4203F89E20760B5E00DC5EB3 /* CompressionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4203F89D20760B5E00DC5EB3 /* CompressionMonitor.swift */; };
+		42093B982024590A008030D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42093B972024590A008030D1 /* AppDelegate.swift */; };
+		42093B9C2024590A008030D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42093B9B2024590A008030D1 /* Assets.xcassets */; };
+		42093B9F2024590A008030D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42093B9D2024590A008030D1 /* Main.storyboard */; };
+		42093BAB2024590B008030D1 /* DotphotonCompressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42093BAA2024590B008030D1 /* DotphotonCompressTests.swift */; };
+		42093BCB20247D5C008030D1 /* RawImagesCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42093BC920247D5C008030D1 /* RawImagesCollectionViewItem.swift */; };
+		42093BCC20247D5C008030D1 /* RawImagesCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42093BCA20247D5C008030D1 /* RawImagesCollectionViewItem.xib */; };
+		42093BD220248499008030D1 /* AspectFillImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42093BD120248499008030D1 /* AspectFillImageView.swift */; };
+		42093BDB2024BEC9008030D1 /* RawImageDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42093BDA2024BEC9008030D1 /* RawImageDropView.swift */; };
+		42103F9420FE1C5D00A820B3 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42103F9220FE1C5D00A820B3 /* Fabric.framework */; };
+		42103F9520FE1C5D00A820B3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42103F9320FE1C5D00A820B3 /* Crashlytics.framework */; };
+		42103F9820FF197C00A820B3 /* AnswersHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42103F9720FF197C00A820B3 /* AnswersHelper.swift */; };
+		42178CF521084AA200502968 /* PageControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178CF321084AA200502968 /* PageControllerContainer.swift */; };
+		42178CFE21085C1B00502968 /* LabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178CFD21085C1B00502968 /* LabelButton.swift */; };
+		42178D0121085F4D00502968 /* CameraSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178CFF21085F4D00502968 /* CameraSupportViewController.swift */; };
+		42178D0221085F4D00502968 /* CameraSupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42178D0021085F4D00502968 /* CameraSupportViewController.xib */; };
+		42178D052108679F00502968 /* DNGConverterDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D032108679F00502968 /* DNGConverterDownloadViewController.swift */; };
+		42178D062108679F00502968 /* DNGConverterDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42178D042108679F00502968 /* DNGConverterDownloadViewController.xib */; };
+		42178D082108AA3D00502968 /* AnswersHelper+ThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D072108AA3D00502968 /* AnswersHelper+ThumbnailViewController.swift */; };
+		42178D0A2108AAB300502968 /* AnswersHelper+DNGConverterDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D092108AAB300502968 /* AnswersHelper+DNGConverterDownloader.swift */; };
+		42178D0C2108AFEC00502968 /* NSError+addItemsToUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D0B2108AFEC00502968 /* NSError+addItemsToUserInfo.swift */; };
+		42178D84210B1D0700502968 /* CameraPacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D82210B1D0700502968 /* CameraPacksViewController.swift */; };
+		42178D85210B1D0700502968 /* CameraPacksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42178D83210B1D0700502968 /* CameraPacksViewController.xib */; };
+		42178D88210B21AD00502968 /* CameraPackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178D86210B21AD00502968 /* CameraPackItem.swift */; };
+		42178D89210B21AD00502968 /* CameraPackItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42178D87210B21AD00502968 /* CameraPackItem.xib */; };
+		42518D3020D8EE30002CACF5 /* RawImagesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42518D2F20D8EE30002CACF5 /* RawImagesCollectionView.swift */; };
+		42518D3220D8F9D4002CACF5 /* RawImagesCollectionViewContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42518D3120D8F9D4002CACF5 /* RawImagesCollectionViewContextMenu.swift */; };
+		42518D3420D938EE002CACF5 /* LeftFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42518D3320D938EE002CACF5 /* LeftFlowLayout.swift */; };
+		42518D3620D94062002CACF5 /* CustomSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42518D3520D94062002CACF5 /* CustomSliderCell.swift */; };
+		425F079520484000004CD5FE /* WaitForDropView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425F079420484000004CD5FE /* WaitForDropView.xib */; };
+		425F079920488713004CD5FE /* WaitForDropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F079820488713004CD5FE /* WaitForDropViewController.swift */; };
+		425F079B204888D7004CD5FE /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F079A204888D7004CD5FE /* MainWindowController.swift */; };
+		425F079D20488E4F004CD5FE /* AcceptDropView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425F079C20488E4F004CD5FE /* AcceptDropView.xib */; };
+		425F079F204892BF004CD5FE /* AcceptDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F079E204892BF004CD5FE /* AcceptDropView.swift */; };
+		425F07A320489835004CD5FE /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F07A220489835004CD5FE /* NibLoadableView.swift */; };
+		425F07A62048A626004CD5FE /* ThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F07A42048A626004CD5FE /* ThumbnailViewController.swift */; };
+		425F07A72048A626004CD5FE /* ThumbnailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425F07A52048A626004CD5FE /* ThumbnailViewController.xib */; };
+		425F07A92049A06E004CD5FE /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F07A82049A06E004CD5FE /* StartButton.swift */; };
+		425F07B2204EDB34004CD5FE /* ButtonWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F07B1204EDB34004CD5FE /* ButtonWithShadow.swift */; };
+		425F07B4204FDD37004CD5FE /* RawImagesCollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425F07B3204FDD37004CD5FE /* RawImagesCollectionViewHeader.xib */; };
+		425F07B6204FE359004CD5FE /* RawImagesCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425F07B5204FE359004CD5FE /* RawImagesCollectionViewHeader.swift */; };
+		425F07B8204FE8B0004CD5FE /* RawImagesCollectionViewFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425F07B7204FE8B0004CD5FE /* RawImagesCollectionViewFooter.xib */; };
+		4261F18021071DEE008AC2C7 /* TitlelessWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261F17F21071DEE008AC2C7 /* TitlelessWindowController.swift */; };
+		4266EA7F2056B1A000F0D54B /* GradientBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266EA7E2056B1A000F0D54B /* GradientBox.swift */; };
+		4266EA822056DF0200F0D54B /* AddMoreButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4266EA812056DF0200F0D54B /* AddMoreButton.xib */; };
+		4266EA842056E07800F0D54B /* AddMoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266EA832056E07800F0D54B /* AddMoreButton.swift */; };
+		4266EA862056E7FB00F0D54B /* FileActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266EA852056E7FB00F0D54B /* FileActions.swift */; };
+		4274A10F2085EF7F00ED3890 /* DuplicateDialogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4274A10E2085EF7F00ED3890 /* DuplicateDialogHandler.swift */; };
+		42AC8CE82080BF570083CFFF /* DialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC8CE62080BF570083CFFF /* DialogController.swift */; };
+		42AC8CE92080BF570083CFFF /* DialogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42AC8CE72080BF570083CFFF /* DialogController.xib */; };
+		42AC8CEB2080D0090083CFFF /* DialogOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC8CEA2080D0090083CFFF /* DialogOption.swift */; };
+		42AC8CF32080F9A00083CFFF /* NSColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC8CF22080F9A00083CFFF /* NSColor+Theme.swift */; };
+		42AC8CFD2084C9F30083CFFF /* DuplicateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC8CFC2084C9F30083CFFF /* DuplicateHandler.swift */; };
+		42C88BFB2189A64100BDD724 /* DotphotonCameraInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C88BF92189A64100BDD724 /* DotphotonCameraInfo.framework */; };
+		42C88BFD2189AAD600BDD724 /* DotphotonCameraInfo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42C88BF92189A64100BDD724 /* DotphotonCameraInfo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42C88BFF2189AAEC00BDD724 /* DotphotonCompressBackend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C88BF82189A64000BDD724 /* DotphotonCompressBackend.framework */; };
+		42C88C002189AAEC00BDD724 /* DotphotonCompressBackend.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42C88BF82189A64000BDD724 /* DotphotonCompressBackend.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42C88C0C2189AE0200BDD724 /* Carpaccio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C88C0A2189ADE300BDD724 /* Carpaccio.framework */; };
+		42C88C0D2189AE0200BDD724 /* Carpaccio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42C88C0A2189ADE300BDD724 /* Carpaccio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42C88C0F2189F35200BDD724 /* DotphotonCompressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C88C0E2189F35200BDD724 /* DotphotonCompressUITests.swift */; };
+		42E9F0FB217DF5C10000C29C /* ListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9F0FA217DF5C10000C29C /* ListFlowLayout.swift */; };
+		42E9F102217E01FB0000C29C /* FixedPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9F101217E01FB0000C29C /* FixedPageController.swift */; };
+		C6302C90B1A5BAC83D2937A2 /* libPods-DotphotonCompress.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 144EF9877901F68BD55E08AF /* libPods-DotphotonCompress.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42093BA72024590B008030D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42093B8C2024590A008030D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42093B932024590A008030D1;
+			remoteInfo = DotphotonProMockup;
+		};
+		42093BB22024590B008030D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42093B8C2024590A008030D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42093B932024590A008030D1;
+			remoteInfo = DotphotonProMockup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4204223F212DBEF9001593C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42178D39210A0B5600502968 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C88BFE2189AAD700BDD724 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42C88BFD2189AAD600BDD724 /* DotphotonCameraInfo.framework in Embed Frameworks */,
+				42C88C002189AAEC00BDD724 /* DotphotonCompressBackend.framework in Embed Frameworks */,
+				42C88C0D2189AE0200BDD724 /* Carpaccio.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		144EF9877901F68BD55E08AF /* libPods-DotphotonCompress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DotphotonCompress.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4203F8922073B82300DC5EB3 /* StartButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartButton.xib; sourceTree = "<group>"; };
+		4203F8982073CE2900DC5EB3 /* NSBezierPath+cgPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+cgPath.swift"; sourceTree = "<group>"; };
+		4203F89D20760B5E00DC5EB3 /* CompressionMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionMonitor.swift; sourceTree = "<group>"; };
+		420422B721398E35001593C6 /* changelog.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = changelog.txt; sourceTree = "<group>"; };
+		42093B942024590A008030D1 /* Dotphoton Compress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dotphoton Compress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42093B972024590A008030D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42093B9B2024590A008030D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42093B9E2024590A008030D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42093BA02024590A008030D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42093BA62024590B008030D1 /* DotphotonCompressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotphotonCompressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42093BAA2024590B008030D1 /* DotphotonCompressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotphotonCompressTests.swift; sourceTree = "<group>"; };
+		42093BAC2024590B008030D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42093BB12024590B008030D1 /* DotphotonCompressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotphotonCompressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42093BB72024590B008030D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42093BC920247D5C008030D1 /* RawImagesCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawImagesCollectionViewItem.swift; sourceTree = "<group>"; };
+		42093BCA20247D5C008030D1 /* RawImagesCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RawImagesCollectionViewItem.xib; sourceTree = "<group>"; };
+		42093BD120248499008030D1 /* AspectFillImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectFillImageView.swift; sourceTree = "<group>"; };
+		42093BDA2024BEC9008030D1 /* RawImageDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawImageDropView.swift; sourceTree = "<group>"; };
+		42103F9220FE1C5D00A820B3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		42103F9320FE1C5D00A820B3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		42103F9720FF197C00A820B3 /* AnswersHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersHelper.swift; sourceTree = "<group>"; };
+		42178CF321084AA200502968 /* PageControllerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControllerContainer.swift; sourceTree = "<group>"; };
+		42178CFD21085C1B00502968 /* LabelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelButton.swift; sourceTree = "<group>"; };
+		42178CFF21085F4D00502968 /* CameraSupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSupportViewController.swift; sourceTree = "<group>"; };
+		42178D0021085F4D00502968 /* CameraSupportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraSupportViewController.xib; sourceTree = "<group>"; };
+		42178D032108679F00502968 /* DNGConverterDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNGConverterDownloadViewController.swift; sourceTree = "<group>"; };
+		42178D042108679F00502968 /* DNGConverterDownloadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DNGConverterDownloadViewController.xib; sourceTree = "<group>"; };
+		42178D072108AA3D00502968 /* AnswersHelper+ThumbnailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnswersHelper+ThumbnailViewController.swift"; sourceTree = "<group>"; };
+		42178D092108AAB300502968 /* AnswersHelper+DNGConverterDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnswersHelper+DNGConverterDownloader.swift"; sourceTree = "<group>"; };
+		42178D0B2108AFEC00502968 /* NSError+addItemsToUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+addItemsToUserInfo.swift"; sourceTree = "<group>"; };
+		42178D82210B1D0700502968 /* CameraPacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPacksViewController.swift; sourceTree = "<group>"; };
+		42178D83210B1D0700502968 /* CameraPacksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraPacksViewController.xib; sourceTree = "<group>"; };
+		42178D86210B21AD00502968 /* CameraPackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPackItem.swift; sourceTree = "<group>"; };
+		42178D87210B21AD00502968 /* CameraPackItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraPackItem.xib; sourceTree = "<group>"; };
+		42518D2F20D8EE30002CACF5 /* RawImagesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawImagesCollectionView.swift; sourceTree = "<group>"; };
+		42518D3120D8F9D4002CACF5 /* RawImagesCollectionViewContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawImagesCollectionViewContextMenu.swift; sourceTree = "<group>"; };
+		42518D3320D938EE002CACF5 /* LeftFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftFlowLayout.swift; sourceTree = "<group>"; };
+		42518D3520D94062002CACF5 /* CustomSliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderCell.swift; sourceTree = "<group>"; };
+		425F076220480C80004CD5FE /* DotphotonCompress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DotphotonCompress.entitlements; sourceTree = "<group>"; };
+		425F079420484000004CD5FE /* WaitForDropView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaitForDropView.xib; sourceTree = "<group>"; };
+		425F079820488713004CD5FE /* WaitForDropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitForDropViewController.swift; sourceTree = "<group>"; };
+		425F079A204888D7004CD5FE /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		425F079C20488E4F004CD5FE /* AcceptDropView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AcceptDropView.xib; sourceTree = "<group>"; };
+		425F079E204892BF004CD5FE /* AcceptDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptDropView.swift; sourceTree = "<group>"; };
+		425F07A220489835004CD5FE /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		425F07A42048A626004CD5FE /* ThumbnailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailViewController.swift; sourceTree = "<group>"; };
+		425F07A52048A626004CD5FE /* ThumbnailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailViewController.xib; sourceTree = "<group>"; };
+		425F07A82049A06E004CD5FE /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		425F07B1204EDB34004CD5FE /* ButtonWithShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithShadow.swift; sourceTree = "<group>"; };
+		425F07B3204FDD37004CD5FE /* RawImagesCollectionViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RawImagesCollectionViewHeader.xib; sourceTree = "<group>"; };
+		425F07B5204FE359004CD5FE /* RawImagesCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawImagesCollectionViewHeader.swift; sourceTree = "<group>"; };
+		425F07B7204FE8B0004CD5FE /* RawImagesCollectionViewFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RawImagesCollectionViewFooter.xib; sourceTree = "<group>"; };
+		4261F17F21071DEE008AC2C7 /* TitlelessWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlelessWindowController.swift; sourceTree = "<group>"; };
+		4266EA7E2056B1A000F0D54B /* GradientBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBox.swift; sourceTree = "<group>"; };
+		4266EA812056DF0200F0D54B /* AddMoreButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddMoreButton.xib; sourceTree = "<group>"; };
+		4266EA832056E07800F0D54B /* AddMoreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoreButton.swift; sourceTree = "<group>"; };
+		4266EA852056E7FB00F0D54B /* FileActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileActions.swift; sourceTree = "<group>"; };
+		4274A10E2085EF7F00ED3890 /* DuplicateDialogHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateDialogHandler.swift; sourceTree = "<group>"; };
+		42AC8CE62080BF570083CFFF /* DialogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogController.swift; sourceTree = "<group>"; };
+		42AC8CE72080BF570083CFFF /* DialogController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialogController.xib; sourceTree = "<group>"; };
+		42AC8CEA2080D0090083CFFF /* DialogOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogOption.swift; sourceTree = "<group>"; };
+		42AC8CF22080F9A00083CFFF /* NSColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Theme.swift"; sourceTree = "<group>"; };
+		42AC8CFC2084C9F30083CFFF /* DuplicateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateHandler.swift; sourceTree = "<group>"; };
+		42C88BF82189A64000BDD724 /* DotphotonCompressBackend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DotphotonCompressBackend.framework; sourceTree = "<group>"; };
+		42C88BF92189A64100BDD724 /* DotphotonCameraInfo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DotphotonCameraInfo.framework; sourceTree = "<group>"; };
+		42C88C0A2189ADE300BDD724 /* Carpaccio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Carpaccio.framework; sourceTree = "<group>"; };
+		42C88C0E2189F35200BDD724 /* DotphotonCompressUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotphotonCompressUITests.swift; sourceTree = "<group>"; };
+		42E9F0FA217DF5C10000C29C /* ListFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFlowLayout.swift; sourceTree = "<group>"; };
+		42E9F101217E01FB0000C29C /* FixedPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedPageController.swift; sourceTree = "<group>"; };
+		5A3355E62C0A39FB0999FADB /* Pods-DotphotonCompress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotphotonCompress.release.xcconfig"; path = "Pods/Target Support Files/Pods-DotphotonCompress/Pods-DotphotonCompress.release.xcconfig"; sourceTree = "<group>"; };
+		C1576CE4CF97350299D22690 /* Pods-DotphotonCompress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotphotonCompress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DotphotonCompress/Pods-DotphotonCompress.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42093B912024590A008030D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42103F9420FE1C5D00A820B3 /* Fabric.framework in Frameworks */,
+				42C88BFF2189AAEC00BDD724 /* DotphotonCompressBackend.framework in Frameworks */,
+				42C88C0C2189AE0200BDD724 /* Carpaccio.framework in Frameworks */,
+				42103F9520FE1C5D00A820B3 /* Crashlytics.framework in Frameworks */,
+				42C88BFB2189A64100BDD724 /* DotphotonCameraInfo.framework in Frameworks */,
+				C6302C90B1A5BAC83D2937A2 /* libPods-DotphotonCompress.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42093BA32024590B008030D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42093BAE2024590B008030D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42093B8B2024590A008030D1 = {
+			isa = PBXGroup;
+			children = (
+				42093B962024590A008030D1 /* DotphotonCompress */,
+				42093BA92024590B008030D1 /* DotphotonCompressTests */,
+				42093BB42024590B008030D1 /* DotphotonCompressUITests */,
+				42093B952024590A008030D1 /* Products */,
+				42AC8CBC207E4BAC0083CFFF /* Frameworks */,
+				AD6E1A4609BADF91E3DA9E2C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		42093B952024590A008030D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42093B942024590A008030D1 /* Dotphoton Compress.app */,
+				42093BA62024590B008030D1 /* DotphotonCompressTests.xctest */,
+				42093BB12024590B008030D1 /* DotphotonCompressUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42093B962024590A008030D1 /* DotphotonCompress */ = {
+			isa = PBXGroup;
+			children = (
+				425F079E204892BF004CD5FE /* AcceptDropView.swift */,
+				425F079C20488E4F004CD5FE /* AcceptDropView.xib */,
+				42103F9620FF195F00A820B3 /* Analytics */,
+				42093B972024590A008030D1 /* AppDelegate.swift */,
+				42093B9B2024590A008030D1 /* Assets.xcassets */,
+				42178CFC210856BE00502968 /* CameraSupportView */,
+				420422B721398E35001593C6 /* changelog.txt */,
+				4203F89D20760B5E00DC5EB3 /* CompressionMonitor.swift */,
+				42AC8CE62080BF570083CFFF /* DialogController.swift */,
+				42AC8CE72080BF570083CFFF /* DialogController.xib */,
+				4261F17821070F17008AC2C7 /* DNGConverterInstallHelper */,
+				425F076220480C80004CD5FE /* DotphotonCompress.entitlements */,
+				4274A10E2085EF7F00ED3890 /* DuplicateDialogHandler.swift */,
+				42AC8CFC2084C9F30083CFFF /* DuplicateHandler.swift */,
+				4266EA852056E7FB00F0D54B /* FileActions.swift */,
+				42E9F101217E01FB0000C29C /* FixedPageController.swift */,
+				42093BA02024590A008030D1 /* Info.plist */,
+				42093B9D2024590A008030D1 /* Main.storyboard */,
+				425F079A204888D7004CD5FE /* MainWindowController.swift */,
+				425F07A220489835004CD5FE /* NibLoadableView.swift */,
+				4203F8982073CE2900DC5EB3 /* NSBezierPath+cgPath.swift */,
+				42AC8CF22080F9A00083CFFF /* NSColor+Theme.swift */,
+				42178D0B2108AFEC00502968 /* NSError+addItemsToUserInfo.swift */,
+				42178CF321084AA200502968 /* PageControllerContainer.swift */,
+				42093BDA2024BEC9008030D1 /* RawImageDropView.swift */,
+				4261F17621070E6C008AC2C7 /* ThumbnailView */,
+				4261F17F21071DEE008AC2C7 /* TitlelessWindowController.swift */,
+				425F079420484000004CD5FE /* WaitForDropView.xib */,
+				425F079820488713004CD5FE /* WaitForDropViewController.swift */,
+				4266EA802056DD3C00F0D54B /* widgets */,
+			);
+			path = DotphotonCompress;
+			sourceTree = "<group>";
+		};
+		42093BA92024590B008030D1 /* DotphotonCompressTests */ = {
+			isa = PBXGroup;
+			children = (
+				42093BAA2024590B008030D1 /* DotphotonCompressTests.swift */,
+				42093BAC2024590B008030D1 /* Info.plist */,
+			);
+			path = DotphotonCompressTests;
+			sourceTree = "<group>";
+		};
+		42093BB42024590B008030D1 /* DotphotonCompressUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42C88C0E2189F35200BDD724 /* DotphotonCompressUITests.swift */,
+				42093BB72024590B008030D1 /* Info.plist */,
+			);
+			path = DotphotonCompressUITests;
+			sourceTree = "<group>";
+		};
+		42103F9620FF195F00A820B3 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				42103F9720FF197C00A820B3 /* AnswersHelper.swift */,
+				42178D072108AA3D00502968 /* AnswersHelper+ThumbnailViewController.swift */,
+				42178D092108AAB300502968 /* AnswersHelper+DNGConverterDownloader.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		42178CFC210856BE00502968 /* CameraSupportView */ = {
+			isa = PBXGroup;
+			children = (
+				42178CFF21085F4D00502968 /* CameraSupportViewController.swift */,
+				42178D0021085F4D00502968 /* CameraSupportViewController.xib */,
+				42178D82210B1D0700502968 /* CameraPacksViewController.swift */,
+				42178D83210B1D0700502968 /* CameraPacksViewController.xib */,
+				42178D86210B21AD00502968 /* CameraPackItem.swift */,
+				42178D87210B21AD00502968 /* CameraPackItem.xib */,
+				42E9F0FA217DF5C10000C29C /* ListFlowLayout.swift */,
+			);
+			path = CameraSupportView;
+			sourceTree = "<group>";
+		};
+		4261F17621070E6C008AC2C7 /* ThumbnailView */ = {
+			isa = PBXGroup;
+			children = (
+				42093BD120248499008030D1 /* AspectFillImageView.swift */,
+				42518D3520D94062002CACF5 /* CustomSliderCell.swift */,
+				42518D3320D938EE002CACF5 /* LeftFlowLayout.swift */,
+				42518D2F20D8EE30002CACF5 /* RawImagesCollectionView.swift */,
+				42518D3120D8F9D4002CACF5 /* RawImagesCollectionViewContextMenu.swift */,
+				425F07B7204FE8B0004CD5FE /* RawImagesCollectionViewFooter.xib */,
+				425F07B5204FE359004CD5FE /* RawImagesCollectionViewHeader.swift */,
+				425F07B3204FDD37004CD5FE /* RawImagesCollectionViewHeader.xib */,
+				42093BC920247D5C008030D1 /* RawImagesCollectionViewItem.swift */,
+				42093BCA20247D5C008030D1 /* RawImagesCollectionViewItem.xib */,
+				425F07A42048A626004CD5FE /* ThumbnailViewController.swift */,
+				425F07A52048A626004CD5FE /* ThumbnailViewController.xib */,
+			);
+			path = ThumbnailView;
+			sourceTree = "<group>";
+		};
+		4261F17821070F17008AC2C7 /* DNGConverterInstallHelper */ = {
+			isa = PBXGroup;
+			children = (
+				42178D032108679F00502968 /* DNGConverterDownloadViewController.swift */,
+				42178D042108679F00502968 /* DNGConverterDownloadViewController.xib */,
+			);
+			path = DNGConverterInstallHelper;
+			sourceTree = "<group>";
+		};
+		4266EA802056DD3C00F0D54B /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				4266EA832056E07800F0D54B /* AddMoreButton.swift */,
+				4266EA812056DF0200F0D54B /* AddMoreButton.xib */,
+				425F07B1204EDB34004CD5FE /* ButtonWithShadow.swift */,
+				42178CFD21085C1B00502968 /* LabelButton.swift */,
+				42AC8CEA2080D0090083CFFF /* DialogOption.swift */,
+				4266EA7E2056B1A000F0D54B /* GradientBox.swift */,
+				425F07A82049A06E004CD5FE /* StartButton.swift */,
+				4203F8922073B82300DC5EB3 /* StartButton.xib */,
+			);
+			path = widgets;
+			sourceTree = "<group>";
+		};
+		42AC8CBC207E4BAC0083CFFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42C88C0A2189ADE300BDD724 /* Carpaccio.framework */,
+				42C88BF92189A64100BDD724 /* DotphotonCameraInfo.framework */,
+				42C88BF82189A64000BDD724 /* DotphotonCompressBackend.framework */,
+				42103F9320FE1C5D00A820B3 /* Crashlytics.framework */,
+				42103F9220FE1C5D00A820B3 /* Fabric.framework */,
+				144EF9877901F68BD55E08AF /* libPods-DotphotonCompress.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD6E1A4609BADF91E3DA9E2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1576CE4CF97350299D22690 /* Pods-DotphotonCompress.debug.xcconfig */,
+				5A3355E62C0A39FB0999FADB /* Pods-DotphotonCompress.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42093B932024590A008030D1 /* DotphotonCompress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42093BBA2024590B008030D1 /* Build configuration list for PBXNativeTarget "DotphotonCompress" */;
+			buildPhases = (
+				4E122FB76A1544CE5501C547 /* [CP] Check Pods Manifest.lock */,
+				42093B902024590A008030D1 /* Sources */,
+				42093B912024590A008030D1 /* Frameworks */,
+				42093B922024590A008030D1 /* Resources */,
+				42103F8C20FE1C1A00A820B3 /* ShellScript */,
+				42178D39210A0B5600502968 /* CopyFiles */,
+				42C88BFE2189AAD700BDD724 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotphotonCompress;
+			productName = DotphotonProMockup;
+			productReference = 42093B942024590A008030D1 /* Dotphoton Compress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42093BA52024590B008030D1 /* DotphotonCompressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42093BBD2024590B008030D1 /* Build configuration list for PBXNativeTarget "DotphotonCompressTests" */;
+			buildPhases = (
+				42093BA22024590B008030D1 /* Sources */,
+				42093BA32024590B008030D1 /* Frameworks */,
+				42093BA42024590B008030D1 /* Resources */,
+				4204223F212DBEF9001593C6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42093BA82024590B008030D1 /* PBXTargetDependency */,
+			);
+			name = DotphotonCompressTests;
+			productName = DotphotonProMockupTests;
+			productReference = 42093BA62024590B008030D1 /* DotphotonCompressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42093BB02024590B008030D1 /* DotphotonCompressUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42093BC02024590B008030D1 /* Build configuration list for PBXNativeTarget "DotphotonCompressUITests" */;
+			buildPhases = (
+				42093BAD2024590B008030D1 /* Sources */,
+				42093BAE2024590B008030D1 /* Frameworks */,
+				42093BAF2024590B008030D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42093BB32024590B008030D1 /* PBXTargetDependency */,
+			);
+			name = DotphotonCompressUITests;
+			productName = DotphotonProMockupUITests;
+			productReference = 42093BB12024590B008030D1 /* DotphotonCompressUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42093B8C2024590A008030D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Christoph Clausen";
+				TargetAttributes = {
+					42093B932024590A008030D1 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					42093BA52024590B008030D1 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 42093B932024590A008030D1;
+					};
+					42093BB02024590B008030D1 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 42093B932024590A008030D1;
+					};
+				};
+			};
+			buildConfigurationList = 42093B8F2024590A008030D1 /* Build configuration list for PBXProject "DotphotonCompress" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42093B8B2024590A008030D1;
+			productRefGroup = 42093B952024590A008030D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42093B932024590A008030D1 /* DotphotonCompress */,
+				42093BA52024590B008030D1 /* DotphotonCompressTests */,
+				42093BB02024590B008030D1 /* DotphotonCompressUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42093B922024590A008030D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42178D062108679F00502968 /* DNGConverterDownloadViewController.xib in Resources */,
+				425F07B8204FE8B0004CD5FE /* RawImagesCollectionViewFooter.xib in Resources */,
+				42AC8CE92080BF570083CFFF /* DialogController.xib in Resources */,
+				42178D85210B1D0700502968 /* CameraPacksViewController.xib in Resources */,
+				42093BCC20247D5C008030D1 /* RawImagesCollectionViewItem.xib in Resources */,
+				42178D0221085F4D00502968 /* CameraSupportViewController.xib in Resources */,
+				425F079520484000004CD5FE /* WaitForDropView.xib in Resources */,
+				42093B9C2024590A008030D1 /* Assets.xcassets in Resources */,
+				4203F8932073B82300DC5EB3 /* StartButton.xib in Resources */,
+				42178D89210B21AD00502968 /* CameraPackItem.xib in Resources */,
+				425F07A72048A626004CD5FE /* ThumbnailViewController.xib in Resources */,
+				425F07B4204FDD37004CD5FE /* RawImagesCollectionViewHeader.xib in Resources */,
+				425F079D20488E4F004CD5FE /* AcceptDropView.xib in Resources */,
+				42093B9F2024590A008030D1 /* Main.storyboard in Resources */,
+				4266EA822056DF0200F0D54B /* AddMoreButton.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42093BA42024590B008030D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42093BAF2024590B008030D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42103F8C20FE1C1A00A820B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a7f416ebd0126a1e1c9353ed8508d0d9b756bdcd bd735aa167638aa77d34076c36aa953d32909fa3a59b27a0d129fc30ff11023b\n";
+		};
+		4E122FB76A1544CE5501C547 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DotphotonCompress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42093B902024590A008030D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AC8CF32080F9A00083CFFF /* NSColor+Theme.swift in Sources */,
+				42093BDB2024BEC9008030D1 /* RawImageDropView.swift in Sources */,
+				4266EA7F2056B1A000F0D54B /* GradientBox.swift in Sources */,
+				42E9F102217E01FB0000C29C /* FixedPageController.swift in Sources */,
+				425F07A92049A06E004CD5FE /* StartButton.swift in Sources */,
+				425F079920488713004CD5FE /* WaitForDropViewController.swift in Sources */,
+				42178CFE21085C1B00502968 /* LabelButton.swift in Sources */,
+				425F07B2204EDB34004CD5FE /* ButtonWithShadow.swift in Sources */,
+				4274A10F2085EF7F00ED3890 /* DuplicateDialogHandler.swift in Sources */,
+				42518D3020D8EE30002CACF5 /* RawImagesCollectionView.swift in Sources */,
+				42093BD220248499008030D1 /* AspectFillImageView.swift in Sources */,
+				425F07B6204FE359004CD5FE /* RawImagesCollectionViewHeader.swift in Sources */,
+				42AC8CEB2080D0090083CFFF /* DialogOption.swift in Sources */,
+				4266EA862056E7FB00F0D54B /* FileActions.swift in Sources */,
+				42178D0C2108AFEC00502968 /* NSError+addItemsToUserInfo.swift in Sources */,
+				42518D3420D938EE002CACF5 /* LeftFlowLayout.swift in Sources */,
+				425F079B204888D7004CD5FE /* MainWindowController.swift in Sources */,
+				42178D88210B21AD00502968 /* CameraPackItem.swift in Sources */,
+				42518D3220D8F9D4002CACF5 /* RawImagesCollectionViewContextMenu.swift in Sources */,
+				42178D052108679F00502968 /* DNGConverterDownloadViewController.swift in Sources */,
+				42E9F0FB217DF5C10000C29C /* ListFlowLayout.swift in Sources */,
+				42093B982024590A008030D1 /* AppDelegate.swift in Sources */,
+				42178D84210B1D0700502968 /* CameraPacksViewController.swift in Sources */,
+				42093BCB20247D5C008030D1 /* RawImagesCollectionViewItem.swift in Sources */,
+				42AC8CFD2084C9F30083CFFF /* DuplicateHandler.swift in Sources */,
+				42178CF521084AA200502968 /* PageControllerContainer.swift in Sources */,
+				4203F8992073CE2900DC5EB3 /* NSBezierPath+cgPath.swift in Sources */,
+				4266EA842056E07800F0D54B /* AddMoreButton.swift in Sources */,
+				42178D0A2108AAB300502968 /* AnswersHelper+DNGConverterDownloader.swift in Sources */,
+				425F07A62048A626004CD5FE /* ThumbnailViewController.swift in Sources */,
+				425F079F204892BF004CD5FE /* AcceptDropView.swift in Sources */,
+				4203F89E20760B5E00DC5EB3 /* CompressionMonitor.swift in Sources */,
+				42103F9820FF197C00A820B3 /* AnswersHelper.swift in Sources */,
+				42178D0121085F4D00502968 /* CameraSupportViewController.swift in Sources */,
+				42518D3620D94062002CACF5 /* CustomSliderCell.swift in Sources */,
+				42178D082108AA3D00502968 /* AnswersHelper+ThumbnailViewController.swift in Sources */,
+				4261F18021071DEE008AC2C7 /* TitlelessWindowController.swift in Sources */,
+				425F07A320489835004CD5FE /* NibLoadableView.swift in Sources */,
+				42AC8CE82080BF570083CFFF /* DialogController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42093BA22024590B008030D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42093BAB2024590B008030D1 /* DotphotonCompressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42093BAD2024590B008030D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C88C0F2189F35200BDD724 /* DotphotonCompressUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42093BA82024590B008030D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42093B932024590A008030D1 /* DotphotonCompress */;
+			targetProxy = 42093BA72024590B008030D1 /* PBXContainerItemProxy */;
+		};
+		42093BB32024590B008030D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42093B932024590A008030D1 /* DotphotonCompress */;
+			targetProxy = 42093BB22024590B008030D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42093B9D2024590A008030D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42093B9E2024590A008030D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42093BB82024590B008030D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"qMacOS=1",
+					"qDNGUseStdInt=1",
+					"Macintosh=1",
+					"MAC_ENV=1",
+					"BIB_MULTI_THREAD=1",
+					"qDNGUseLibJPEG=1",
+					"Debug=1",
+					"qDNGDebug=0",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					dotphotondngcompression/DotphotonDNGCompression,
+					"dotphotondngcompression/include/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		42093BB92024590B008030D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"qMacOS=1",
+					"qDNGUseStdInt=1",
+					"Macintosh=1",
+					"MAC_ENV=1",
+					"BIB_MULTI_THREAD=1",
+					"qDNGUseLibJPEG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					dotphotondngcompression/DotphotonDNGCompression,
+					"dotphotondngcompression/include/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		42093BBB2024590B008030D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1576CE4CF97350299D22690 /* Pods-DotphotonCompress.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = M3L69RBD62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "Debug=1";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DotphotonCompress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotphoton.DotphotonCompress;
+				PRODUCT_NAME = "Dotphoton Compress";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		42093BBC2024590B008030D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3355E62C0A39FB0999FADB /* Pods-DotphotonCompress.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = M3L69RBD62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DotphotonCompress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotphoton.DotphotonCompress;
+				PRODUCT_NAME = "Dotphoton Compress";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		42093BBE2024590B008030D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WTKC8HSEGY;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DotphotonCompressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotphoton.DotphotonCompressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dotphoton Compress.app/Contents/MacOS/Dotphoton Compress";
+			};
+			name = Debug;
+		};
+		42093BBF2024590B008030D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WTKC8HSEGY;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DotphotonCompressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotphoton.DotphotonCompressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dotphoton Compress.app/Contents/MacOS/Dotphoton Compress";
+			};
+			name = Release;
+		};
+		42093BC12024590B008030D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WTKC8HSEGY;
+				INFOPLIST_FILE = DotphotonCompressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotphoton.DotphotonCompressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = DotphotonCompress;
+			};
+			name = Debug;
+		};
+		42093BC22024590B008030D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WTKC8HSEGY;
+				INFOPLIST_FILE = DotphotonCompressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotphoton.DotphotonCompressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = DotphotonCompress;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42093B8F2024590A008030D1 /* Build configuration list for PBXProject "DotphotonCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42093BB82024590B008030D1 /* Debug */,
+				42093BB92024590B008030D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42093BBA2024590B008030D1 /* Build configuration list for PBXNativeTarget "DotphotonCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42093BBB2024590B008030D1 /* Debug */,
+				42093BBC2024590B008030D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42093BBD2024590B008030D1 /* Build configuration list for PBXNativeTarget "DotphotonCompressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42093BBE2024590B008030D1 /* Debug */,
+				42093BBF2024590B008030D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42093BC02024590B008030D1 /* Build configuration list for PBXNativeTarget "DotphotonCompressUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42093BC12024590B008030D1 /* Debug */,
+				42093BC22024590B008030D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42093B8C2024590A008030D1 /* Project object */;
+}

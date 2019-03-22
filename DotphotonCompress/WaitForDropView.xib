@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WaitForDropViewController" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <connections>
+                <outlet property="browseButton" destination="H1o-V9-NXa" id="QdK-Uw-GKW"/>
+                <outlet property="openBrowseButton" destination="bfV-sy-fmF" id="AJG-59-sG4"/>
+                <outlet property="view" destination="c22-O7-iKe" id="s8S-RU-bAz"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="RawImageDropView" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="493" height="380"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="9Oh-8g-7sI">
+                    <rect key="frame" x="0.0" y="0.0" width="493" height="380"/>
+                    <view key="contentView" id="aNx-ex-Www">
+                        <rect key="frame" x="0.0" y="0.0" width="493" height="380"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="wtx-8U-9pu">
+                                <rect key="frame" x="162" y="0.0" width="5" height="380"/>
+                            </box>
+                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="JoT-Rb-8ph">
+                                <rect key="frame" x="326" y="0.0" width="5" height="380"/>
+                            </box>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="MKe-zc-Yv2">
+                                <rect key="frame" x="0.0" y="250" width="493" height="5"/>
+                            </box>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="yOv-5g-feB">
+                                <rect key="frame" x="0.0" y="124" width="493" height="5"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="heU-va-EER">
+                                <rect key="frame" x="145" y="145" width="204" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="p8D-cM-Sg7"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Drop your images and folders here or click to browse" id="RNd-Sm-Crn">
+                                    <font key="font" metaFont="system" size="25"/>
+                                    <color key="textColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-uY-CN5">
+                                <rect key="frame" x="-2" y="0.0" width="497" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="RAWs, DNGs or folders containing them" id="Mru-fs-7r3">
+                                    <font key="font" metaFont="system" size="18"/>
+                                    <color key="textColor" name="Color Text Light"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-V9-NXa" customClass="ButtonWithShadow" customModule="Dotphoton_Compress" customModuleProvider="target">
+                                <rect key="frame" x="157" y="146" width="180" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="p6F-wh-Lsm"/>
+                                    <constraint firstAttribute="width" constant="180" id="uTU-q4-57x"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="or browse to select..."/>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bfV-sy-fmF">
+                                <rect key="frame" x="147" y="145" width="200" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="CIB-mk-ZOQ"/>
+                                </constraints>
+                                <buttonCell key="cell" type="bevel" bezelStyle="rounded" alignment="center" transparent="YES" imageScaling="proportionallyDown" inset="2" id="08V-Zo-3Km">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openFileSelector:" target="-2" id="Ss6-GD-I7R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KbP-uY-CN5" firstAttribute="leading" secondItem="aNx-ex-Www" secondAttribute="leading" id="1fn-yj-YgR"/>
+                            <constraint firstItem="heU-va-EER" firstAttribute="centerY" secondItem="aNx-ex-Www" secondAttribute="centerY" id="4Uy-Tw-bGF"/>
+                            <constraint firstAttribute="bottom" secondItem="wtx-8U-9pu" secondAttribute="bottom" id="5HN-jd-t7w"/>
+                            <constraint firstItem="yOv-5g-feB" firstAttribute="leading" secondItem="aNx-ex-Www" secondAttribute="leading" id="7fw-cI-94I"/>
+                            <constraint firstItem="JoT-Rb-8ph" firstAttribute="trailing" secondItem="aNx-ex-Www" secondAttribute="trailing" multiplier="2/3" id="8ZK-YR-a2e"/>
+                            <constraint firstAttribute="trailing" secondItem="yOv-5g-feB" secondAttribute="trailing" id="AGm-fY-OOp"/>
+                            <constraint firstAttribute="bottom" secondItem="JoT-Rb-8ph" secondAttribute="bottom" id="Cq4-11-QSf"/>
+                            <constraint firstItem="bfV-sy-fmF" firstAttribute="trailing" secondItem="heU-va-EER" secondAttribute="trailing" id="EFa-Km-fFR"/>
+                            <constraint firstItem="bfV-sy-fmF" firstAttribute="centerY" secondItem="heU-va-EER" secondAttribute="centerY" id="Lig-1C-36T"/>
+                            <constraint firstAttribute="trailing" secondItem="MKe-zc-Yv2" secondAttribute="trailing" id="NHp-bX-O57"/>
+                            <constraint firstItem="yOv-5g-feB" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="bottom" multiplier="2/3" id="ObL-XS-92x"/>
+                            <constraint firstItem="bfV-sy-fmF" firstAttribute="leading" secondItem="heU-va-EER" secondAttribute="leading" id="Xin-BN-GYi"/>
+                            <constraint firstAttribute="trailing" secondItem="KbP-uY-CN5" secondAttribute="trailing" id="YSh-pA-pxH"/>
+                            <constraint firstItem="H1o-V9-NXa" firstAttribute="centerX" secondItem="aNx-ex-Www" secondAttribute="centerX" id="fJ8-FU-SBc"/>
+                            <constraint firstItem="H1o-V9-NXa" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="bottom" multiplier="0.52" id="gB0-Zz-0ex"/>
+                            <constraint firstItem="MKe-zc-Yv2" firstAttribute="leading" secondItem="aNx-ex-Www" secondAttribute="leading" id="ghY-II-3ah"/>
+                            <constraint firstItem="heU-va-EER" firstAttribute="centerX" secondItem="aNx-ex-Www" secondAttribute="centerX" id="mGA-Tf-5sy"/>
+                            <constraint firstItem="MKe-zc-Yv2" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="bottom" multiplier="1/3" id="mx6-Lr-4Il"/>
+                            <constraint firstItem="wtx-8U-9pu" firstAttribute="leading" secondItem="aNx-ex-Www" secondAttribute="trailing" multiplier="1/3" id="oi9-FI-uJ9"/>
+                            <constraint firstAttribute="bottom" secondItem="KbP-uY-CN5" secondAttribute="bottom" id="rFg-7V-TWa"/>
+                            <constraint firstItem="JoT-Rb-8ph" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="top" id="tiA-YC-8WY"/>
+                            <constraint firstItem="wtx-8U-9pu" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="top" id="zUJ-7T-tFS"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9Oh-8g-7sI" secondAttribute="bottom" id="0ca-Mm-xKM"/>
+                <constraint firstItem="9Oh-8g-7sI" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="D9Q-55-MBU"/>
+                <constraint firstAttribute="trailing" secondItem="9Oh-8g-7sI" secondAttribute="trailing" id="leC-Uk-VYj"/>
+                <constraint firstItem="9Oh-8g-7sI" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="sob-27-Yph"/>
+            </constraints>
+            <point key="canvasLocation" x="-27.5" y="126"/>
+        </customView>
+        <button verticalHuggingPriority="750" id="JaH-nu-tOI">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="17"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <buttonCell key="cell" type="inline" title="Inline" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="XKl-iW-It5">
+                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                <font key="font" metaFont="smallSystemBold"/>
+            </buttonCell>
+        </button>
+    </objects>
+    <resources>
+        <namedColor name="Color Text Light">
+            <color red="0.62000000476837158" green="0.62400001287460327" blue="0.62000000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DNGConverterDownloadViewController" customModule="DotphotonCompress" customModuleProvider="target">
+            <connections>
+                <outlet property="downloadButton" destination="hEi-UB-Zwe" id="jez-gi-Xmk"/>
+                <outlet property="downloadProgress" destination="Jty-05-P8x" id="EEv-v5-Ei6"/>
+                <outlet property="downloadStatus" destination="Rd4-Kx-vVR" id="l6i-8A-waz"/>
+                <outlet property="installButton" destination="2bp-mS-y6M" id="b9J-12-qgT"/>
+                <outlet property="installProgress" destination="Mcr-4r-Ewb" id="ee2-Qf-apu"/>
+                <outlet property="installStatus" destination="ONz-qu-VqS" id="Dmx-fw-hyD"/>
+                <outlet property="verifyButton" destination="6zg-fG-556" id="ZM9-vU-FFW"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="805" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="qEk-7d-FXr">
+                    <rect key="frame" x="0.0" y="0.0" width="805" height="172"/>
+                    <view key="contentView" id="gGx-X7-BBG">
+                        <rect key="frame" x="0.0" y="0.0" width="805" height="172"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzr-10-3Gj" userLabel="Download Box">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="172"/>
+                                <view key="contentView" id="ysF-Hq-1VS">
+                                    <rect key="frame" x="1" y="1" width="98" height="170"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-OB-B23">
+                                            <rect key="frame" x="17" y="53" width="65" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Download" id="KB4-zM-xW2">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="hEi-UB-Zwe" customClass="ButtonWithShadow" customModule="DotphotonCompress" customModuleProvider="target">
+                                            <rect key="frame" x="34" y="70" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="N53-nz-lf2"/>
+                                                <constraint firstAttribute="height" constant="30" id="xGu-nP-9Mn"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="▶"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="downloadClicked:" target="-2" id="RuR-2t-lMI"/>
+                                            </connections>
+                                        </customView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1iL-OB-B23" firstAttribute="centerX" secondItem="hEi-UB-Zwe" secondAttribute="centerX" id="YbG-M5-RPX"/>
+                                        <constraint firstItem="1iL-OB-B23" firstAttribute="top" secondItem="hEi-UB-Zwe" secondAttribute="bottom" id="ngp-iT-yh3"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6Xn-el-huF"/>
+                                    <constraint firstItem="hEi-UB-Zwe" firstAttribute="centerY" secondItem="hzr-10-3Gj" secondAttribute="centerY" id="UpG-JL-5k2"/>
+                                    <constraint firstItem="hEi-UB-Zwe" firstAttribute="centerX" secondItem="hzr-10-3Gj" secondAttribute="centerX" id="hql-Vy-k3W"/>
+                                </constraints>
+                            </box>
+                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CF8-S0-CI4" userLabel="Download Progress Box">
+                                <rect key="frame" x="100" y="0.0" width="253" height="172"/>
+                                <view key="contentView" id="MLk-Cz-qHB">
+                                    <rect key="frame" x="1" y="1" width="251" height="170"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Jty-05-P8x">
+                                            <rect key="frame" x="10" y="75" width="231" height="20"/>
+                                        </progressIndicator>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rd4-Kx-vVR">
+                                            <rect key="frame" x="99" y="94" width="54" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Waiting" id="cyP-Lo-c9w">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Jty-05-P8x" firstAttribute="leading" secondItem="MLk-Cz-qHB" secondAttribute="leading" constant="10" id="4R5-sJ-GrZ"/>
+                                        <constraint firstItem="Rd4-Kx-vVR" firstAttribute="centerX" secondItem="Jty-05-P8x" secondAttribute="centerX" id="D5l-rJ-4cm"/>
+                                        <constraint firstItem="Jty-05-P8x" firstAttribute="top" secondItem="Rd4-Kx-vVR" secondAttribute="bottom" id="EbS-yR-vM9"/>
+                                        <constraint firstAttribute="trailing" secondItem="Jty-05-P8x" secondAttribute="trailing" constant="10" id="iPW-tv-e85"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Jty-05-P8x" firstAttribute="centerY" secondItem="CF8-S0-CI4" secondAttribute="centerY" id="AbL-Ru-mGR"/>
+                                </constraints>
+                            </box>
+                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qqr-27-dm3" userLabel="Install Box">
+                                <rect key="frame" x="353" y="0.0" width="100" height="172"/>
+                                <view key="contentView" id="7CW-iK-w1y">
+                                    <rect key="frame" x="1" y="1" width="98" height="170"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="2bp-mS-y6M" customClass="ButtonWithShadow" customModule="DotphotonCompress" customModuleProvider="target">
+                                            <rect key="frame" x="34" y="70" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="GDl-5V-hLn"/>
+                                                <constraint firstAttribute="width" constant="30" id="hXI-aI-CwM"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="②"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="installClicked:" target="-2" id="ogL-IL-8ER"/>
+                                            </connections>
+                                        </customView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bwE-cO-15j">
+                                            <rect key="frame" x="29" y="53" width="40" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Install" id="Eb5-qE-GcR">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2bp-mS-y6M" firstAttribute="centerY" secondItem="7CW-iK-w1y" secondAttribute="centerY" id="5OA-Ic-K0d"/>
+                                        <constraint firstItem="bwE-cO-15j" firstAttribute="top" secondItem="2bp-mS-y6M" secondAttribute="bottom" id="C39-MB-kf2"/>
+                                        <constraint firstItem="2bp-mS-y6M" firstAttribute="centerX" secondItem="7CW-iK-w1y" secondAttribute="centerX" id="IP3-9I-Mup"/>
+                                        <constraint firstItem="bwE-cO-15j" firstAttribute="centerX" secondItem="2bp-mS-y6M" secondAttribute="centerX" id="bSv-IU-pBf"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="fOQ-eU-SWP"/>
+                                    <constraint firstItem="2bp-mS-y6M" firstAttribute="centerX" secondItem="Qqr-27-dm3" secondAttribute="centerX" id="rcv-HH-jbE"/>
+                                </constraints>
+                            </box>
+                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vau-fK-Gvt" userLabel="Verify Box">
+                                <rect key="frame" x="705" y="0.0" width="100" height="172"/>
+                                <view key="contentView" id="VtO-pg-epe">
+                                    <rect key="frame" x="1" y="1" width="98" height="170"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="6zg-fG-556" customClass="ButtonWithShadow" customModule="DotphotonCompress" customModuleProvider="target">
+                                            <rect key="frame" x="34" y="70" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="f0J-3M-VuJ"/>
+                                                <constraint firstAttribute="height" constant="30" id="g56-kJ-rYd"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="③"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </customView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T5k-zr-Fad">
+                                            <rect key="frame" x="29" y="53" width="40" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Verify" id="i8e-jV-Crl">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="T5k-zr-Fad" firstAttribute="centerX" secondItem="6zg-fG-556" secondAttribute="centerX" id="PQ8-7L-6Lb"/>
+                                        <constraint firstItem="6zg-fG-556" firstAttribute="centerY" secondItem="VtO-pg-epe" secondAttribute="centerY" id="WpU-NZ-uWU"/>
+                                        <constraint firstItem="T5k-zr-Fad" firstAttribute="top" secondItem="6zg-fG-556" secondAttribute="bottom" id="aoI-Za-mAV"/>
+                                        <constraint firstItem="6zg-fG-556" firstAttribute="centerX" secondItem="VtO-pg-epe" secondAttribute="centerX" id="fx3-QD-wjx"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rZ1-zE-UBh"/>
+                                </constraints>
+                            </box>
+                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ro9-5J-1kD" userLabel="Install Progress Box">
+                                <rect key="frame" x="453" y="0.0" width="252" height="172"/>
+                                <view key="contentView" id="RPS-R2-VH9">
+                                    <rect key="frame" x="1" y="1" width="250" height="170"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Mcr-4r-Ewb">
+                                            <rect key="frame" x="10" y="75" width="230" height="20"/>
+                                        </progressIndicator>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ONz-qu-VqS">
+                                            <rect key="frame" x="98" y="94" width="54" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Waiting" id="7Cj-Qb-glt">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Mcr-4r-Ewb" secondAttribute="trailing" constant="10" id="1aV-Lv-Enk"/>
+                                        <constraint firstItem="ONz-qu-VqS" firstAttribute="centerX" secondItem="Mcr-4r-Ewb" secondAttribute="centerX" id="1dS-sS-RuU"/>
+                                        <constraint firstItem="Mcr-4r-Ewb" firstAttribute="leading" secondItem="RPS-R2-VH9" secondAttribute="leading" constant="10" id="U4j-JI-kxW"/>
+                                        <constraint firstItem="Mcr-4r-Ewb" firstAttribute="top" secondItem="ONz-qu-VqS" secondAttribute="bottom" id="hDS-Vm-KEI"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Mcr-4r-Ewb" firstAttribute="centerY" secondItem="Ro9-5J-1kD" secondAttribute="centerY" id="fkL-Gz-Vll"/>
+                                </constraints>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hzr-10-3Gj" firstAttribute="leading" secondItem="gGx-X7-BBG" secondAttribute="leading" id="1NM-oL-8hr"/>
+                            <constraint firstItem="hzr-10-3Gj" firstAttribute="top" secondItem="gGx-X7-BBG" secondAttribute="top" id="1od-1X-9Ls"/>
+                            <constraint firstItem="vau-fK-Gvt" firstAttribute="leading" secondItem="Ro9-5J-1kD" secondAttribute="trailing" id="4Rq-lU-7yZ"/>
+                            <constraint firstAttribute="trailing" secondItem="vau-fK-Gvt" secondAttribute="trailing" id="9JP-GK-bN2"/>
+                            <constraint firstItem="vau-fK-Gvt" firstAttribute="top" secondItem="gGx-X7-BBG" secondAttribute="top" id="AIS-Zm-9Zk"/>
+                            <constraint firstAttribute="bottom" secondItem="Ro9-5J-1kD" secondAttribute="bottom" id="IW5-fA-C83"/>
+                            <constraint firstItem="CF8-S0-CI4" firstAttribute="width" secondItem="Ro9-5J-1kD" secondAttribute="width" id="TR4-jK-q7S"/>
+                            <constraint firstAttribute="bottom" secondItem="vau-fK-Gvt" secondAttribute="bottom" id="UHH-cq-K2r"/>
+                            <constraint firstAttribute="bottom" secondItem="hzr-10-3Gj" secondAttribute="bottom" id="WgH-ab-1xq"/>
+                            <constraint firstItem="CF8-S0-CI4" firstAttribute="leading" secondItem="hzr-10-3Gj" secondAttribute="trailing" id="Wkn-cR-YVy"/>
+                            <constraint firstItem="Ro9-5J-1kD" firstAttribute="top" secondItem="gGx-X7-BBG" secondAttribute="top" id="Y1B-Ay-ZYM"/>
+                            <constraint firstItem="Qqr-27-dm3" firstAttribute="leading" secondItem="CF8-S0-CI4" secondAttribute="trailing" id="bJ3-mh-LKo"/>
+                            <constraint firstItem="CF8-S0-CI4" firstAttribute="top" secondItem="gGx-X7-BBG" secondAttribute="top" id="cFV-lr-Vnf"/>
+                            <constraint firstAttribute="bottom" secondItem="Qqr-27-dm3" secondAttribute="bottom" id="eCl-p7-ZuR"/>
+                            <constraint firstItem="Ro9-5J-1kD" firstAttribute="leading" secondItem="Qqr-27-dm3" secondAttribute="trailing" id="kY7-j8-p9j"/>
+                            <constraint firstItem="Qqr-27-dm3" firstAttribute="top" secondItem="gGx-X7-BBG" secondAttribute="top" id="rhh-ni-DYP"/>
+                            <constraint firstAttribute="bottom" secondItem="CF8-S0-CI4" secondAttribute="bottom" id="xgE-MI-OVe"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="fillColor" name="Color Window Background"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qEk-7d-FXr" secondAttribute="trailing" id="5ro-zf-MaU"/>
+                <constraint firstAttribute="bottom" secondItem="qEk-7d-FXr" secondAttribute="bottom" id="SJ6-gp-Mph"/>
+                <constraint firstItem="qEk-7d-FXr" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="jvl-7Q-Ien"/>
+                <constraint firstItem="qEk-7d-FXr" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="rJl-9X-3uw"/>
+            </constraints>
+            <point key="canvasLocation" x="21.5" y="73"/>
+        </customView>
+    </objects>
+    <resources>
+        <namedColor name="Color Window Background">
+            <color red="0.96899998190000003" green="0.96899998190000003" blue="0.96899998190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

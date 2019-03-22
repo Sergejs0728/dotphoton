@@ -1,0 +1,4 @@
+framework module DotphotonCameraInfo {
+  header "DotphotonCameraInfo-Swift.h"
+  requires objc
+}

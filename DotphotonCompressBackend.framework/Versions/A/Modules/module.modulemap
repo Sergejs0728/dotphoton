@@ -1,0 +1,11 @@
+framework module DotphotonCompressBackend {
+  umbrella header "DotphotonCompressBackend.h"
+
+  export *
+  module * { export * }
+}
+
+module DotphotonCompressBackend.Swift {
+    header "DotphotonCompressBackend-Swift.h"
+    requires objc
+}

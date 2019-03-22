@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="StartButton" customModule="DotphotonConvert" customModuleProvider="target">
+            <connections>
+                <outlet property="blurBox" destination="iCM-j8-aa6" id="rYR-od-yEX"/>
+                <outlet property="doneCircle" destination="GdG-l6-E6j" id="SpL-gT-asX"/>
+                <outlet property="pauseCircle" destination="kDj-qR-bae" id="eA9-EK-lhT"/>
+                <outlet property="startBox" destination="b2I-MV-iLd" id="ePJ-Tw-b59"/>
+                <outlet property="view" destination="c22-O7-iKe" id="hI7-U2-OD1"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" userLabel="StartCircle">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="55" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="b2I-MV-iLd">
+                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                    <view key="contentView" id="HXs-I2-ak9">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VuL-Wb-Xo7">
+                                <rect key="frame" x="30" y="43" width="50" height="25"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Start" id="Ime-nQ-j0N">
+                                    <font key="font" metaFont="systemMedium" size="21"/>
+                                    <color key="textColor" name="Color Start Button Text"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="VuL-Wb-Xo7" firstAttribute="centerX" secondItem="HXs-I2-ak9" secondAttribute="centerX" id="VId-xa-9N3"/>
+                            <constraint firstItem="VuL-Wb-Xo7" firstAttribute="centerY" secondItem="HXs-I2-ak9" secondAttribute="centerY" id="hDQ-cS-ymx"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" name="Color Button Blue"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="b2I-MV-iLd" secondAttribute="bottom" id="4Uo-0j-2qs"/>
+                <constraint firstItem="b2I-MV-iLd" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="5c5-WH-X7g"/>
+                <constraint firstAttribute="trailing" secondItem="b2I-MV-iLd" secondAttribute="trailing" id="KdG-8k-Vcm"/>
+                <constraint firstItem="b2I-MV-iLd" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="d4h-2X-KtR"/>
+            </constraints>
+        </customView>
+        <customView id="GdG-l6-E6j" userLabel="DoneCircle">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="55" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-W5-Jmt">
+                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                    <view key="contentView" id="F3m-Hk-gZD">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XuG-Q8-a5Y">
+                                <rect key="frame" x="28" y="15" width="54" height="25"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Done" id="Z8j-AH-ief">
+                                    <font key="font" metaFont="systemMedium" size="21"/>
+                                    <color key="textColor" name="Color Start Button Text"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q3y-tU-b8K">
+                                <rect key="frame" x="29" y="46" width="52" height="38"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="DoneSymbol" id="u1T-14-EvH"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="XuG-Q8-a5Y" firstAttribute="centerY" secondItem="F3m-Hk-gZD" secondAttribute="bottom" multiplier="9/12" id="4V6-ck-YgE"/>
+                            <constraint firstItem="Q3y-tU-b8K" firstAttribute="centerX" secondItem="F3m-Hk-gZD" secondAttribute="centerX" id="ICE-7q-iDL"/>
+                            <constraint firstItem="Q3y-tU-b8K" firstAttribute="bottom" secondItem="F3m-Hk-gZD" secondAttribute="bottom" multiplier="7/12" id="dAF-4N-O4C"/>
+                            <constraint firstItem="XuG-Q8-a5Y" firstAttribute="centerX" secondItem="F3m-Hk-gZD" secondAttribute="centerX" id="fbO-iD-yEX"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" name="Color Button Blue"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hlD-W5-Jmt" firstAttribute="leading" secondItem="GdG-l6-E6j" secondAttribute="leading" id="Jpm-eT-6SW"/>
+                <constraint firstItem="hlD-W5-Jmt" firstAttribute="top" secondItem="GdG-l6-E6j" secondAttribute="top" id="MKg-sL-hHv"/>
+                <constraint firstAttribute="bottom" secondItem="hlD-W5-Jmt" secondAttribute="bottom" id="Qrd-Ej-2lJ"/>
+                <constraint firstAttribute="trailing" secondItem="hlD-W5-Jmt" secondAttribute="trailing" id="eJI-d7-0Kd"/>
+            </constraints>
+            <point key="canvasLocation" x="311" y="169"/>
+        </customView>
+        <customView id="kDj-qR-bae" userLabel="PauseCircle">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tCA-cb-CNf">
+                    <rect key="frame" x="25" y="43" width="61" height="25"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Pause" id="b3f-Rk-hvt">
+                        <font key="font" metaFont="systemMedium" size="21"/>
+                        <color key="textColor" name="Color Button Blue"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tCA-cb-CNf" firstAttribute="centerX" secondItem="kDj-qR-bae" secondAttribute="centerX" id="EFB-J8-Y0d"/>
+                <constraint firstItem="tCA-cb-CNf" firstAttribute="centerY" secondItem="kDj-qR-bae" secondAttribute="centerY" id="N6e-sZ-tuW"/>
+            </constraints>
+            <point key="canvasLocation" x="-41" y="169"/>
+        </customView>
+        <box wantsLayer="YES" boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" id="iCM-j8-aa6" userLabel="BlurBox">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" id="QLm-39-evW">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            </view>
+            <backgroundFilters>
+                <ciFilter name="CIGaussianBlur">
+                    <configuration>
+                        <null key="inputImage"/>
+                        <real key="inputRadius" value="2"/>
+                    </configuration>
+                </ciFilter>
+                <ciFilter name="CIColorControls">
+                    <configuration>
+                        <real key="inputBrightness" value="0.20000000000000001"/>
+                        <real key="inputContrast" value="1"/>
+                        <null key="inputImage"/>
+                        <real key="inputSaturation" value="0.0"/>
+                    </configuration>
+                </ciFilter>
+            </backgroundFilters>
+            <point key="canvasLocation" x="479" y="169"/>
+        </box>
+    </objects>
+    <resources>
+        <image name="DoneSymbol" width="52" height="38"/>
+        <namedColor name="Color Button Blue">
+            <color red="0.092000000179999999" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color Start Button Text">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

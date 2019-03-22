@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CameraPacksViewController" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="DBX-Pw-EBQ" id="mP7-eL-LhW"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="650" height="507"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SlL-TM-Aih">
+                    <rect key="frame" x="0.0" y="447" width="650" height="60"/>
+                    <view key="contentView" id="AGf-t0-crb">
+                        <rect key="frame" x="0.0" y="0.0" width="650" height="60"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="skI-bS-atc">
+                                <rect key="frame" x="8" y="6" width="323" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="These cameras are supported - many more to come!" id="X6G-Mk-AYe">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="Color Text Dark"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CHK-uU-3JQ">
+                                <rect key="frame" x="8" y="28" width="150" height="22"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Camera Packages" id="J8e-od-F91">
+                                    <font key="font" metaFont="system" size="18"/>
+                                    <color key="textColor" name="Color Text Dark"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CHK-uU-3JQ" firstAttribute="top" secondItem="AGf-t0-crb" secondAttribute="top" constant="10" id="9b4-KG-cRv"/>
+                            <constraint firstItem="skI-bS-atc" firstAttribute="leading" secondItem="AGf-t0-crb" secondAttribute="leading" constant="10" id="CC2-eL-hzz"/>
+                            <constraint firstItem="CHK-uU-3JQ" firstAttribute="leading" secondItem="AGf-t0-crb" secondAttribute="leading" constant="10" id="Cjw-bT-NvA"/>
+                            <constraint firstItem="skI-bS-atc" firstAttribute="top" secondItem="CHK-uU-3JQ" secondAttribute="bottom" constant="5" id="NLI-jp-9Yj"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="EEB-qL-4uF"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="650" id="S1A-hg-enP"/>
+                    </constraints>
+                </box>
+                <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYE-NG-F0x">
+                    <rect key="frame" x="0.0" y="0.0" width="650" height="447"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Io1-v6-c3W">
+                        <rect key="frame" x="0.0" y="0.0" width="650" height="447"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView id="DBX-Pw-EBQ">
+                                <rect key="frame" x="0.0" y="0.0" width="650" height="447"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Gpd-8n-FXk" customClass="ListFlowLayout" customModule="Dotphoton_Compress" customModuleProvider="target">
+                                    <size key="itemSize" width="50" height="50"/>
+                                </collectionViewFlowLayout>
+                                <color key="primaryBackgroundColor" name="alternatingContentBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="-2" id="vxb-gj-0A4"/>
+                                    <outlet property="delegate" destination="-2" id="FZ4-9q-60n"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="uby-NZ-uUN">
+                        <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Cqr-bL-1Ca">
+                        <rect key="frame" x="634" y="0.0" width="16" height="447"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wYE-NG-F0x" secondAttribute="trailing" id="06D-Ry-ZSp"/>
+                <constraint firstItem="SlL-TM-Aih" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="4QS-vk-HYi"/>
+                <constraint firstItem="wYE-NG-F0x" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Dz5-0a-jWY"/>
+                <constraint firstAttribute="trailing" secondItem="SlL-TM-Aih" secondAttribute="trailing" id="FdN-NQ-90Z"/>
+                <constraint firstAttribute="bottom" secondItem="wYE-NG-F0x" secondAttribute="bottom" id="Qpd-XE-rd7"/>
+                <constraint firstItem="SlL-TM-Aih" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="r9Y-7P-ClI"/>
+                <constraint firstItem="wYE-NG-F0x" firstAttribute="top" secondItem="SlL-TM-Aih" secondAttribute="bottom" id="t60-Wg-Bwx"/>
+            </constraints>
+            <point key="canvasLocation" x="95" y="151"/>
+        </customView>
+    </objects>
+    <resources>
+        <namedColor name="Color Text Dark">
+            <color red="0.24300000071525574" green="0.24300000071525574" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

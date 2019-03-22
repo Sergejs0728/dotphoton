@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DNGConverterDownloadViewController" customModule="AdobeDNGConverterInstaller" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="3Ta-If-0nU" id="Xoc-Fb-b0z"/>
+                <outlet property="progress" destination="Jty-05-P8x" id="EEv-v5-Ei6"/>
+                <outlet property="status" destination="Rd4-Kx-vVR" id="q0h-eF-j6M"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="199"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rd4-Kx-vVR">
+                    <rect key="frame" x="-2" y="119" width="65" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Waiting..." id="cyP-Lo-c9w">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Jty-05-P8x">
+                    <rect key="frame" x="0.0" y="90" width="398" height="20"/>
+                </progressIndicator>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Ta-If-0nU">
+                    <rect key="frame" x="158" y="43" width="82" height="32"/>
+                    <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q1K-1T-Bwe">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="buttonClicked:" target="-2" id="97f-ER-RHf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Jty-05-P8x" firstAttribute="width" secondItem="Hz6-mo-xeY" secondAttribute="width" id="BIS-4M-GKp"/>
+                <constraint firstItem="3Ta-If-0nU" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="GjL-zf-1Hs"/>
+                <constraint firstItem="Jty-05-P8x" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="PJH-Sv-p9x"/>
+                <constraint firstItem="3Ta-If-0nU" firstAttribute="top" secondItem="Jty-05-P8x" secondAttribute="bottom" constant="20" id="W4j-lP-DoB"/>
+                <constraint firstItem="Rd4-Kx-vVR" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="YAR-X9-eT6"/>
+                <constraint firstItem="Jty-05-P8x" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="cdG-ua-6Tr"/>
+                <constraint firstItem="Jty-05-P8x" firstAttribute="top" secondItem="Rd4-Kx-vVR" secondAttribute="bottom" constant="10" id="jP1-pa-ktk"/>
+            </constraints>
+            <point key="canvasLocation" x="21.5" y="200.5"/>
+        </customView>
+    </objects>
+</document>

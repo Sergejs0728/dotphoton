@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AcceptDropView" customModule="Dotphoton_Compress" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="c22-O7-iKe" id="nOg-sI-IqR"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="493" height="380"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="9Oh-8g-7sI">
+                    <rect key="frame" x="0.0" y="0.0" width="493" height="380"/>
+                    <view key="contentView" id="aNx-ex-Www">
+                        <rect key="frame" x="0.0" y="0.0" width="493" height="380"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box hidden="YES" horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="wtx-8U-9pu">
+                                <rect key="frame" x="162" y="0.0" width="5" height="380"/>
+                            </box>
+                            <box hidden="YES" horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="JoT-Rb-8ph">
+                                <rect key="frame" x="326" y="0.0" width="5" height="380"/>
+                            </box>
+                            <box hidden="YES" verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="MKe-zc-Yv2">
+                                <rect key="frame" x="0.0" y="250" width="493" height="5"/>
+                            </box>
+                            <box hidden="YES" verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="yOv-5g-feB">
+                                <rect key="frame" x="0.0" y="124" width="493" height="5"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="heU-va-EER">
+                                <rect key="frame" x="95" y="175" width="304" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Tg7-iL-z3b"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Drop it like it's hot, mate!" id="RNd-Sm-Crn">
+                                    <font key="font" metaFont="system" size="26"/>
+                                    <color key="textColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wtx-8U-9pu" secondAttribute="bottom" id="5HN-jd-t7w"/>
+                            <constraint firstItem="yOv-5g-feB" firstAttribute="leading" secondItem="aNx-ex-Www" secondAttribute="leading" id="7fw-cI-94I"/>
+                            <constraint firstItem="JoT-Rb-8ph" firstAttribute="trailing" secondItem="aNx-ex-Www" secondAttribute="trailing" multiplier="2/3" id="8ZK-YR-a2e"/>
+                            <constraint firstAttribute="trailing" secondItem="yOv-5g-feB" secondAttribute="trailing" id="AGm-fY-OOp"/>
+                            <constraint firstAttribute="bottom" secondItem="JoT-Rb-8ph" secondAttribute="bottom" id="Cq4-11-QSf"/>
+                            <constraint firstItem="heU-va-EER" firstAttribute="centerY" secondItem="aNx-ex-Www" secondAttribute="centerY" id="NBy-P3-ZfV"/>
+                            <constraint firstAttribute="trailing" secondItem="MKe-zc-Yv2" secondAttribute="trailing" id="NHp-bX-O57"/>
+                            <constraint firstItem="yOv-5g-feB" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="bottom" multiplier="2/3" id="ObL-XS-92x"/>
+                            <constraint firstItem="MKe-zc-Yv2" firstAttribute="leading" secondItem="aNx-ex-Www" secondAttribute="leading" id="ghY-II-3ah"/>
+                            <constraint firstItem="heU-va-EER" firstAttribute="centerX" secondItem="aNx-ex-Www" secondAttribute="centerX" id="mGA-Tf-5sy"/>
+                            <constraint firstItem="MKe-zc-Yv2" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="bottom" multiplier="1/3" id="mx6-Lr-4Il"/>
+                            <constraint firstItem="wtx-8U-9pu" firstAttribute="leading" secondItem="aNx-ex-Www" secondAttribute="trailing" multiplier="1/3" id="oi9-FI-uJ9"/>
+                            <constraint firstItem="JoT-Rb-8ph" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="top" id="tiA-YC-8WY"/>
+                            <constraint firstItem="wtx-8U-9pu" firstAttribute="top" secondItem="aNx-ex-Www" secondAttribute="top" id="zUJ-7T-tFS"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9Oh-8g-7sI" secondAttribute="bottom" id="0ca-Mm-xKM"/>
+                <constraint firstItem="9Oh-8g-7sI" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="D9Q-55-MBU"/>
+                <constraint firstAttribute="trailing" secondItem="9Oh-8g-7sI" secondAttribute="trailing" id="leC-Uk-VYj"/>
+                <constraint firstItem="9Oh-8g-7sI" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="sob-27-Yph"/>
+            </constraints>
+            <point key="canvasLocation" x="-27.5" y="126"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,26 @@
+New in version 0.7.5
+- Added support for Sony RX1R2.
+- Minor GUI bug fixes.
+- Compression speed improvements.
+
+New in version 0.7
+- Camera calibration data is obfuscated and encrypted (DCON-84).
+- Fixed issue resulting in calibration data not being loaded from the camera packs.
+- Thumbnail selection frame is now drawn behind the thumbnail.
+- DCON-115 #done Renamed menu items to Dotphoton Compress.
+- DCON-105 #done Window remembers size and position between sessions.
+- Set minimum OS version to 10.12 because of cryptography libraries.
+- DCON-93 Show status bar for all possible window states.
+- Added "already compressed" as possible result when adding new files.
+- DCON-113 #done Added package installer.
+
+New in version 0.6
+- Do not accept DNG files that contain a LUT (includes already compressed files). Resolves DCON-89.
+- Use latest DotphotonDNGCompression to avoid Image Digest Errors. Resolves DCON-95.
+- Fixed AutoLayout error resulting from resizing the camera pack view and switching back to thumbnails.
+- DCON-6 #done Compressed files contain Dotphoton signature.
+- DCON-92 #done Pressing CMD+A selects all thumbnails.
+- DCON-85 #done Introduced a space in the product name.
+- DCON-87 #done Use 'file' instead of 'files' if only one file present.
+- DCON-88 #done Folders can now be dropped onto the application icon.
+- DCON-90 #done Image path can be view as tooltip when hovering over thumbnail.

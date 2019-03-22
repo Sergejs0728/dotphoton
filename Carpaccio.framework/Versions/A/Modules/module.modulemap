@@ -1,0 +1,11 @@
+framework module Carpaccio {
+  umbrella header "Carpaccio.h"
+
+  export *
+  module * { export * }
+}
+
+module Carpaccio.Swift {
+    header "Carpaccio-Swift.h"
+    requires objc
+}
